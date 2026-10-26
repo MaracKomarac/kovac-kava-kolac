@@ -131,7 +131,7 @@ main section {
   font-weight: 700;
   font-size: 1.1rem;
   margin-top: 1.25rem;
-  color: var(--glavna);
+  color: var(--naglasak);
 }
 .faq dd {
   margin: .35rem 0 0;
