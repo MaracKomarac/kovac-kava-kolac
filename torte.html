@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Torte | Kava & Kolač, Velika Gorica</title>
+    <meta
+      name="description"
+      content="Torte po narudžbi, kava i kolači, vikendom doručci i kutak za proslave u Velikoj Gorici."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">🍰 Kava & Kolač ☕</a>
+      <nav>
+        <button
+          class="hamburger"
+          aria-label="Otvori izbornik"
+          aria-expanded="false"
+          aria-controls="izbornik"
+        >
+          ☰
+        </button>
+        <ul id="izbornik">
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="meni.html">Meni</a></li>
+          <li><a href="torte.html" aria-current="page">Torte</a></li>
+          <li><a href="kontakt.html" class="btn">Naruči tortu</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="naslov-stranice">
+        <h1>Torte po narudžbi</h1>
+        <div class="napomena-okvir">
+          <p>Ispunite obrazac — to je upit, ne plaćanje.</p>
+          <p>Narudžbu potvrđujemo nakon kapare u kafiću ili uplatom na račun.</p>
+          <p>Tortu preuzimate osobno u kafiću (dostave nema).</p>
+        </div>
+      </section>
+
+      <section class="torte-galerija">
+        <figure>
+          <img src="slike/cokolada.jpg" alt="Čokoladna torta" />
+          <figcaption>Čokolada</figcaption>
+        </figure>
+        <figure>
+          <img src="slike/vanilija.webp" alt="Vanilija i jagoda" />
+          <figcaption>Vanilija i jagoda</figcaption>
+        </figure>
+        <figure>
+          <img src="slike/sir.webp" alt="Sir i malina" />
+          <figcaption>Sir i malina</figcaption>
+        </figure>
+        <figure>
+          <img src="slike/orah.webp" alt="Orah i karamela" />
+          <figcaption>Orah i karamela</figcaption>
+        </figure>
+      </section>
+
+      <section class="torte-forma">
+        <h2>Naručite tortu</h2>
+        <form action="https://formspree.io/f/PRIMJER" method="POST">
+          <label for="velicina">Veličina torte</label>
+          <select id="velicina" name="velicina" required>
+            <option value="">Odaberite veličinu</option>
+            <option>10 osoba</option>
+            <option>15 osoba</option>
+            <option>20 osoba</option>
+          </select>
+
+          <label for="okus">Okus</label>
+          <select id="okus" name="okus" required>
+            <option value="">Odaberite okus</option>
+            <option>Čokolada</option>
+            <option>Vanilija i jagoda</option>
+            <option>Sir i malina</option>
+            <option>Orah i karamela</option>
+          </select>
+
+          <label for="natpis">Natpis na torti (nije obavezno)</label>
+          <input type="text" id="natpis" name="natpis" maxlength="40" />
+
+          <label for="datum">Datum preuzimanja</label>
+          <input type="date" id="datum" name="datum_preuzimanja" required />
+
+          <label for="ime">Ime i prezime</label>
+          <input type="text" id="ime" name="ime" autocomplete="name" required />
+
+          <label for="telefon">Telefon</label>
+          <input
+            type="tel"
+            id="telefon"
+            name="telefon"
+            autocomplete="tel"
+            required
+          />
+
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            required
+          />
+
+          <button type="submit" class="btn">Pošalji upit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Kava & Kolač · Zagrebačka 2, Velika Gorica</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meni | Kava & Kolač, Velika Gorica</title>
+    <meta
+      name="description"
+      content="Torte po narudžbi, kava i kolači, vikendom doručci i kutak za proslave u Velikoj Gorici. "
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">🍰 Kava & Kolač ☕</a>
+      <nav>
+        <button
+          class="hamburger"
+          aria-label="Otvori izbornik"
+          aria-expanded="false"
+          aria-controls="izbornik"
+        >
+          ☰
+        </button>
+        <ul id="izbornik">
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="meni.html" aria-current="page">Meni</a></li>
+          <li><a href="torte.html">Torte</a></li>
+          <li><a href="kontakt.html" class="btn">Naruči tortu</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="jelovnik">
+      <div class="omotac">
+        <!-- ===== KAVA ===== -->
+        <section class="kategorija" id="kava" aria-labelledby="naslov-kava">
+          <h2 id="naslov-kava">Kava</h2>
+          <ul class="stavke">
+            <li class="stavka">
+              <div class="stavka-red">
+                <h3>Espresso</h3>
+                <span class="cijena">1,80 €</span>
+              </div>
+            </li>
+            <li class="stavka">
+              <div class="stavka-red">
+                <h3>Kava s mlijekom</h3>
+                <span class="cijena">2,00 €</span>
+              </div>
+            </li>
+            <li class="stavka">
+              <div class="stavka-red">
+                <h3>Cappuccino</h3>
+                <span class="cijena">2,40 €</span>
+              </div>
+              <p class="opis">
+                Espresso, toplo mlijeko i gusta mliječna pjena.
+              </p>
+            </li>
+            <li class="stavka">
+              <div class="stavka-red">
+                <h3>Flat white</h3>
+                <span class="cijena">2,80 €</span>
+              </div>
+              <p class="opis">Dvostruki espresso i svileno mlijeko.</p>
+            </li>
+            <li class="stavka">
+              <div class="stavka-red">
+                <h3>Ledena kava</h3>
+                <span class="cijena">3,20 €</span>
+              </div>
+              <p class="opis">
+                Espresso, hladno mlijeko i led. Po želji sa šlagom.
+              </p>
+            </li>
+          </ul>
+          <p class="dodatak">
+            Biljno mlijeko (zob, badem) +0,40 € · Dodatni espresso +0,80 €
+          </p>
+        </section>
+
+        <!-- ===== KOLAČI ===== -->
+        <section class="kategorija" id="kolaci" aria-labelledby="naslov-kolaci">
+          <h2 id="naslov-kolaci">Kolači</h2>
+          <p class="napomena">Svaki dan svježe</p>
+          <ul class="stavke">
+            <li class="stavka">
+              <div class="stavka-red">
+                <h3>
+                  Cheesecake s malinama
+                  <abbr class="oznaka" title="vegetarijansko">(V)</abbr>
+                </h3>
+                <span class="cijena">4,20 €</span>
+              </div>
+              <p class="opis">Krem sir, keks podloga i preljev od malina.</p>
+            </li>
+            <li class="stavka">
+              <div class="stavka-red">
+                <h3>
+                  Čokoladna torta
+                  <abbr class="oznaka" title="vegetarijansko">(V)</abbr>
+                  <abbr class="oznaka" title="bez glutena">(BG)</abbr>
+                </h3>
+                <span class="cijena">4,50 €</span>
+              </div>
+              <p class="opis">Tamna čokolada i mljeveni bademi, bez brašna.</p>
+            </li>
+            <li class="stavka">
+              <div class="stavka-red">
+                <h3>
+                  Zadarska torta
+                  <abbr class="oznaka" title="vegetarijansko">(V)</abbr>
+                </h3>
+                <span class="cijena">4,00 €</span>
+              </div>
+              <p class="opis">Bademi, naranča i liker od višnje maraske.</p>
+            </li>
+            <li class="stavka">
+              <div class="stavka-red">
+                <h3>
+                  Croissant s maslacem
+                  <abbr class="oznaka" title="vegetarijansko">(V)</abbr>
+                </h3>
+                <span class="cijena">2,20 €</span>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- ===== VIKEND DORUČAK ===== -->
+        <section
+          class="kategorija"
+          id="dorucak"
+          aria-labelledby="naslov-dorucak"
+        >
+          <h2 id="naslov-dorucak">Vikend doručak</h2>
+          <p class="napomena">Subota i nedjelja, 9:00–12:00</p>
+          <ul class="stavke">
+            <li class="stavka">
+              <div class="stavka-red">
+                <h3>Jaja Benedict</h3>
+                <span class="cijena">9,50 €</span>
+              </div>
+              <p class="opis">
+                Dva poširana jaja, pršut, holandez umak i domaći kruh.
+              </p>
+            </li>
+            <li class="stavka">
+              <div class="stavka-red">
+                <h3>
+                  Kajgana s tartufima
+                  <abbr class="oznaka" title="vegetarijansko">(V)</abbr>
+                </h3>
+                <span class="cijena">10,50 €</span>
+              </div>
+              <p class="opis">
+                Tri jaja, istarski tartuf, tost od kiselog tijesta.
+              </p>
+            </li>
+            <li class="stavka">
+              <div class="stavka-red">
+                <h3>
+                  Avokado tost <abbr class="oznaka" title="vegansko">(Ve)</abbr>
+                </h3>
+                <span class="cijena">8,20 €</span>
+              </div>
+              <p class="opis">
+                Kruh od kiselog tijesta, avokado, cherry rajčice i sjemenke.
+              </p>
+            </li>
+            <li class="stavka">
+              <div class="stavka-red">
+                <h3>
+                  Palačinke s voćem
+                  <abbr class="oznaka" title="vegetarijansko">(V)</abbr>
+                </h3>
+                <span class="cijena">7,80 €</span>
+              </div>
+              <p class="opis">
+                Tri američke palačinke, sezonsko voće i javorov sirup.
+              </p>
+            </li>
+          </ul>
+          <p class="dodatak">
+            Uz svaki doručak espresso ili kava s mlijekom za +1,00 €
+          </p>
+        </section>
+
+        <!-- ===== LEGENDA ===== -->
+        <aside class="legenda" aria-label="Oznake i napomene">
+          <p>
+            <strong>Oznake:</strong> V – vegetarijansko · Ve – vegansko · BG –
+            bez glutena
+          </p>
+          <p>Informacije o alergenima zatražite od našeg osoblja.</p>
+          <p>Sve cijene su u eurima i uključuju PDV.</p>
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2026 Kava & Kolač · Zagrebačka 2, Velika Gorica</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt |  Kava & Kolač, Velika Gorica</title>
+  <meta name="description" content="Torte po narudžbi, kava i kolači, vikendom doručci i kutak za proslave u Velikoj Gorici. ">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">🍰 Kava & Kolač ☕</a>
+ <nav>
+  <button class="hamburger" aria-label="Otvori izbornik" aria-expanded="false" aria-controls="izbornik">☰</button>
+    <ul id="izbornik">
+         <li><a href="index.html">Početna</a></li>
+         <li><a href="meni.html">Meni</a></li>
+        <li><a href="torte.html">Torte</a></li>
+        <li><a href="kontakt.html" aria-current="page" class="btn">Kontakt</a></li>
+    </ul>
+</nav>
+  </header>
+
+  <main>
+    <section class="naslov-stranice">
+      <h1>Kontaktirajte nas</h1>
+      <p>Pošaljite upit, a mi vam se javimo u roku od 24 sata.</p>
+    </section>
+
+    <section class="kontakt">
+      <form class="obrazac" action="https://formspree.io/f/PRIMJER" method="POST">
+        <label for="ime">Ime i prezime</label>
+        <input type="text" id="ime" name="ime" required autocomplete="name">
+
+        <label for="telefon">Telefon</label>
+        <input type="tel" id="telefon" name="telefon" required autocomplete="tel">
+
+        <label for="mail">E-mail</label>
+        <input type="email" id="mail" name="mail" required autocomplete="email">
+
+        <label for="poruka">Napomena (nije obavezno)</label>
+        <textarea id="poruka" name="poruka" rows="3"></textarea>
+
+        <button type="submit" class="btn">Pošalji upit</button>
+      </form>
+
+      <div class="info">
+        <h2>Gdje smo</h2>
+        <p>Zagrebačka 2 Velika Gorica<br>Parking ulaz iz dvorišta</p>
+        <h2>Radno vrijeme</h2>
+        <p>Ponedjeljak–Petak 7:30h–20:00h,</p>
+         <p>Subota 8:00h–20:00h</p> 
+          <p>Nedjelja 9:00h–18:00h</p>
+        <h2>Telefon</h2>
+        <p><a href="tel:+385910000000">091 000 0000</a></p>
+        <p><a href="mailto:sankovkolac@gmail.com">sankovkolac@gmail.com</a></p>
+        <iframe
+          src="https://www.google.com/maps?q=Velika+Gorica&output=embed"
+          title="Karta: Kava & Kolač, Velika Gorica"
+          loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Kava & Kolač · Zagrebačka 2, Velika Gorica</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html> 
